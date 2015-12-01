@@ -1,0 +1,8 @@
+@mixin cols($width, $space, $numCols) {
+	float: left;
+	width: ($width - $space*($numCols - 1)) / $numCols;
+	margin-left: $space;
+	&:first-child {
+		margin-left: 0;
+	}
+}
